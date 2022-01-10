@@ -1,6 +1,8 @@
 # Worms Simulation
 
 The Worms program is a simulation of worms living their lives in a 2D plane called a board. See Figure 1: Examples of Worms On a Game Board.
+
+![Figure 1](./Figure01ScreenShot.png)
 Figure 1: Examples of Worms On a Game Board
 
 ## Board
@@ -22,7 +24,7 @@ WormSim encapsulates the board, some string “sayings”, and zero or more Worm
 
 - Following the principle of separation of concerns, the WormSim class intentionally does not have any "drawing" or user input dependencies. It is anticipated that many different strategies for "drawing" a simulation board and the worms may eventually be implemented. Similarly, many different mechanisms for user input may eventually be implemented. WormSim is responsible for encapsulating board state irrespective and decoupled from drawing and user input implemented elsewhere. See Section Use of the Strategy Design Pattern for more information about the decoupling.
 - Composition ("has-a") relationships are preferred over inheritance ("is-a") relationships between classes. For example, each WormsSim instance has an arbitrary number of Worm instances and has a board. WormsSim has no “virtual” methods suitable for inheritance based polymorphic dispatch.
-- WormsSim participates in the Mediator design pattern: https://en.wikipedia.org/ wiki/Mediator_pattern For example, Worm instances interact with other Worm instances and the board exclusively via WomsSim.
+- WormsSim participates in the Mediator design pattern: https://en.wikipedia.org/wiki/Mediator_pattern For example, Worm instances interact with other Worm instances and the board exclusively via WomsSim.
 
 ## Use of the Strategy Design Pattern
 
